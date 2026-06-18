@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="midnight">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RaverCloud — Virtual DJ Residency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Saira+Condensed:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/theme.css" />
+<link rel="stylesheet" href="styles/sections.css" />
+</head>
+<body>
+<div class="bg-field"></div>
+<div class="grain" data-anim></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="RaverCloud home">
+    <span class="mark"></span>
+    <b>RaverCloud</b>
+    <span class="sub">/ Residency</span>
+  </a>
+  <div class="nav-links">
+    <a href="#product">Product</a>
+    <a href="#how">How it works</a>
+    <a href="#formats">Formats</a>
+    <a href="#founding">Founding</a>
+  </div>
+  <div class="nav-cta">
+    <a href="#demo" class="nav-demo">Watch demo</a>
+    <a href="#founding" class="btn btn--primary">Apply</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ============ 1 · HERO ============ -->
+  <header class="hero" data-screen-label="Hero">
+    <div class="hero-lights" data-anim><span class="l1"></span><span class="l2"></span></div>
+    <div class="hero-grid"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="kicker reveal">Founding DJ Residency · Applications open</span>
+        <h1 class="display reveal" data-d="1">Launch your own <span class="soft">virtual DJ</span> residency.</h1>
+        <p class="hero-sub reveal" data-d="2">Host premium virtual shows, sell tickets, bring fans on-screen, and build a replay archive from every set.</p>
+        <div class="hero-actions reveal" data-d="3">
+          <a href="#founding" class="btn btn--primary btn--lg">Apply for a Founding DJ Residency</a>
+          <a href="#demo" class="btn btn--ghost btn--lg"><span class="play"></span>Watch the Demo</a>
+        </div>
+        <div class="hero-trust reveal" data-d="4">
+          <span class="rule"></span> Built on the Luminara / XCaster live media stack
+        </div>
+      </div>
+
+      <div class="stage reveal" data-d="2">
+        <div class="stage-screen">
+          <span class="pill pill--live live-chip"><span class="dot"></span>Live</span>
+          <image-slot id="hero-stage" placeholder="Drop DJ feed / virtual club still" fit="cover"></image-slot>
+          <div class="stage-hud">
+            <div class="stage-eq" data-anim>
+              <i style="animation-delay:0s"></i><i style="animation-delay:.15s"></i>
+              <i style="animation-delay:.3s"></i><i style="animation-delay:.1s"></i>
+              <i style="animation-delay:.25s"></i><i style="animation-delay:.05s"></i>
+              <i style="animation-delay:.35s"></i><i style="animation-delay:.2s"></i>
+            </div>
+            <span class="viewers"><span class="pill__dot" style="width:6px;height:6px;border-radius:50%;background:var(--accent-2)"></span>1,284 in the room</span>
+          </div>
+        </div>
+        <div class="wall">
+          <div class="tile" data-anim style="--d:0s"></div>
+          <div class="tile" data-anim style="--d:.4s"></div>
+          <div class="tile" data-anim style="--d:.8s"></div>
+          <div class="tile" data-anim style="--d:1.2s"></div>
+          <div class="tile" data-anim style="--d:1.6s"></div>
+          <div class="tile" data-anim style="--d:2s"></div>
+          <div class="wall-label"><span>Audience video wall</span><span>fan cams · opt-in</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ 2 · PROBLEM ============ -->
+  <section class="section" id="problem" data-screen-label="Problem">
+    <div class="wrap">
+      <div class="problem-grid">
+        <div class="reveal">
+          <span class="eyebrow-index">02 / The gap</span>
+          <p class="big" style="margin-top:18px">Livestreaming is easy. Building a <em>memorable, monetizable</em> show format is hard.</p>
+          <p class="lede" style="margin-top:24px">Going live takes one click. Owning a recurring show your fans plan their week around — that's the part no streaming platform actually gives you.</p>
+        </div>
+        <ul class="con-list">
+          <li class="con-item reveal"><span class="x">✕</span><div><h4>Twitch and YouTube are crowded</h4><p>You're one tile in an infinite grid, competing with everything else on the internet.</p></div></li>
+          <li class="con-item reveal" data-d="1"><span class="x">✕</span><div><h4>Instagram Live disappears</h4><p>The set ends, the story expires, and the moment is gone within 24 hours.</p></div></li>
+          <li class="con-item reveal" data-d="2"><span class="x">✕</span><div><h4>Most DJ streams feel disposable</h4><p>A webcam in a corner doesn't feel like an event worth buying a ticket for.</p></div></li>
+          <li class="con-item reveal" data-d="3"><span class="x">✕</span><div><h4>Fans stay passive</h4><p>They watch, maybe drop an emoji, and never feel like they were actually in the room.</p></div></li>
+          <li class="con-item reveal" data-d="4"><span class="x">✕</span><div><h4>Promo &amp; replay are left to you</h4><p>Every flyer, clip, and re-upload is one more unpaid job between sets.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · PRODUCT PROMISE ============ -->
+  <section class="section section--tight" id="product" data-screen-label="Product promise">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom:46px">
+        <span class="kicker">03 / What you get</span>
+        <h2 class="display">Your virtual residency, packaged.</h2>
+        <p class="lede">Everything a premium recurring show needs — the page, the stage, the audience, and the money — in one connected system.</p>
+      </div>
+      <div class="feat-grid">
+        <article class="feat feat--hero reveal">
+          <div class="ftext">
+            <span class="num">01</span>
+            <h3>DJ Profile Page</h3>
+            <p>A branded home for the artist — bio, upcoming shows, residency schedule, and the full replay archive in one link.</p>
+            <span class="tag">your-name.ravercloud.live</span>
+          </div>
+          <div class="fvis">
+            <span class="slot-tag">DJ profile</span>
+            <image-slot id="feat-profile" placeholder="Drop DJ profile mockup" fit="cover"></image-slot>
+          </div>
+        </article>
+        <article class="feat reveal" data-d="1"><span class="num">02</span><h3>Branded Event Page</h3><p>A dedicated page for each virtual show — date, lineup, ticket tiers, and a countdown.</p><span class="tag">one per show</span></article>
+        <article class="feat reveal" data-d="2"><span class="num">03</span><h3>Virtual Club Stream</h3><p>A cinematic performance format that looks like a venue, not a webcam window.</p><span class="tag">the stage</span></article>
+        <article class="feat reveal"><span class="num">04</span><h3>Audience Video Wall</h3><p>Opt-in fan cams appear inside the room, so the crowd is visibly part of the show.</p><span class="tag">fans on-screen</span></article>
+        <article class="feat reveal" data-d="1"><span class="num">05</span><h3>Ticketing &amp; Tips</h3><p>Sell entry, take tips mid-set, and run VIP tiers — direct, no middle layer.</p><span class="tag">get paid</span></article>
+        <article class="feat reveal" data-d="2"><span class="num">06</span><h3>Replay Archive</h3><p>Every set becomes a reusable media asset you can gate, sell, or release.</p><span class="tag">after the show</span></article>
+        <article class="feat reveal" data-d="3"><span class="num">07</span><h3>Promo Kit</h3><p>Auto-generated flyers, clips, and copy so promoting the event isn't a second job.</p><span class="tag">share-ready</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 · HOW IT WORKS ============ -->
+  <section class="section" id="how" data-screen-label="How it works">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom:46px">
+        <span class="kicker">04 / The flow</span>
+        <h2 class="display">How your first RaverCloud show works.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="ghost">01</span><h4>Apply for a residency</h4><p>Tell us about your project. We review and onboard founding DJs by hand.</p><span class="si">Step 01 · apply</span></div>
+        <div class="step reveal" data-d="1"><span class="ghost">02</span><h4>Choose your show format</h4><p>Weekly set, monthly session, label showcase — pick a recurring shape.</p><span class="si">Step 02 · format</span></div>
+        <div class="step reveal" data-d="2"><span class="ghost">03</span><h4>Set up your stream</h4><p>Follow guided OBS setup. A 10-minute tech rehearsal gets you stage-ready.</p><span class="si">Step 03 · OBS</span></div>
+        <div class="step reveal"><span class="ghost">04</span><h4>Promote your event</h4><p>Use the promo kit and your branded event page to fill the room.</p><span class="si">Step 04 · promo</span></div>
+        <div class="step reveal" data-d="1"><span class="ghost">05</span><h4>Go live inside the club</h4><p>Perform in the virtual venue with fans on the wall and tips rolling in.</p><span class="si">Step 05 · live</span></div>
+        <div class="step reveal" data-d="2"><span class="ghost">06</span><h4>Monetize the replay</h4><p>Turn the recorded set into gated replay access, clips, and merch moments.</p><span class="si">Step 06 · replay</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 · FORMATS ============ -->
+  <section class="section section--tight" id="formats" data-screen-label="Residency formats">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom:42px">
+        <span class="kicker">05 / Recurring formats</span>
+        <h2 class="display">Built for recurring shows, not one-off streams.</h2>
+        <p class="lede">A residency is a format your fans can count on. Start with one of these and make it yours.</p>
+      </div>
+      <div class="format-grid">
+        <article class="format reveal"><span class="sched">Fri · Weekly</span><h4>Weekly Friday Set</h4><p>Your standing night. Same room, same time, every week.</p></article>
+        <article class="format reveal" data-d="1"><span class="sched">Monthly</span><h4>Underground Session</h4><p>A deeper, longer monthly journey for the core crowd.</p></article>
+        <article class="format reveal" data-d="2"><span class="sched">Showcase</span><h4>Label Showcase</h4><p>Put the whole roster on one stage across a single night.</p></article>
+        <article class="format reveal" data-d="3"><span class="sched">Late</span><h4>Afterparty Series</h4><p>The set that starts when the headline show ends.</p></article>
+        <article class="format reveal"><span class="sched">Sun · Ambient</span><h4>Ambient Sunday</h4><p>A slow, immersive listening stream to close the week.</p></article>
+        <article class="format reveal" data-d="1"><span class="sched">Guest</span><h4>Guest DJ Takeover</h4><p>Hand the room to a guest and split the door.</p></article>
+        <article class="format reveal" data-d="2"><span class="sched">VIP</span><h4>VIP Fan Club Event</h4><p>Members-only sets for your most committed listeners.</p></article>
+        <article class="format reveal" data-d="3"><span class="sched">Release</span><h4>Release Party</h4><p>Premiere the record live, the night it drops.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · FAN PARTICIPATION ============ -->
+  <section class="section" id="fans" data-screen-label="Fan participation">
+    <div class="wrap">
+      <div class="fan-split">
+        <div class="fan-visual reveal">
+          <div class="fan-wall" data-anim>
+            <div class="tile"></div><div class="tile self"></div><div class="tile"></div><div class="tile"></div>
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile self"></div>
+            <div class="tile"></div><div class="tile"></div><div class="tile self"></div><div class="tile"></div>
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+        </div>
+        <div>
+          <div class="sec-head reveal" style="margin-bottom:18px">
+            <span class="kicker">06 / Participation</span>
+            <h2 class="display">Let your fans become part of the room.</h2>
+          </div>
+          <ul class="fan-feats">
+            <li class="reveal"><span class="ic"></span><div><h4>Audience video wall</h4><p>Fans appear inside the show.</p></div></li>
+            <li class="reveal" data-d="1"><span class="ic"></span><div><h4>Fan camera opt-in</h4><p>On-screen only if they choose.</p></div></li>
+            <li class="reveal"><span class="ic"></span><div><h4>Live chat</h4><p>The room talks back in real time.</p></div></li>
+            <li class="reveal" data-d="1"><span class="ic"></span><div><h4>VIP shoutouts</h4><p>Call out the crowd by name.</p></div></li>
+            <li class="reveal"><span class="ic"></span><div><h4>Request queue</h4><p>Fans line up the next track.</p></div></li>
+            <li class="reveal" data-d="1"><span class="ic"></span><div><h4>Tip moments</h4><p>Support that lands mid-set.</p></div></li>
+            <li class="reveal"><span class="ic"></span><div><h4>Photo moments</h4><p>Screenshot-worthy room shots.</p></div></li>
+            <li class="reveal" data-d="1"><span class="ic"></span><div><h4>Tip-triggered visuals <span class="soon">soon</span></h4><p>Tips light up the stage.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 · MONETIZATION ============ -->
+  <section class="section section--tight" id="money" data-screen-label="Monetization">
+    <div class="wrap">
+      <div class="money-head reveal">
+        <div class="sec-head">
+          <span class="kicker">07 / Monetization</span>
+          <h2 class="display">Your set should keep working<br>after the stream ends.</h2>
+        </div>
+        <p class="lede" style="max-width:34ch">One night can become multiple revenue streams — live, on replay, and beyond.</p>
+      </div>
+      <div class="money-grid">
+        <article class="money reveal"><span class="idx">01</span><h4>Ticketed live events</h4><p>Sell entry to the room with tiered pricing.</p><span class="when">live</span></article>
+        <article class="money reveal" data-d="1"><span class="idx">02</span><h4>Tips &amp; donations</h4><p>Direct support during the set, in the moment.</p><span class="when">live</span></article>
+        <article class="money reveal" data-d="2"><span class="idx">03</span><h4>Replay access</h4><p>Gate or sell the recording after the show.</p><span class="when">after</span></article>
+        <article class="money reveal"><span class="idx">04</span><h4>Merch links</h4><p>Drop products in-stream and on the event page.</p><span class="when">live + after</span></article>
+        <article class="money reveal" data-d="1"><span class="idx">05</span><h4>Sponsorship potential</h4><p>Branded shows and presented-by residencies.</p><span class="when">opportunity</span></article>
+        <article class="money reveal" data-d="2"><span class="idx">06</span><h4>Memberships</h4><p>Recurring fan-club revenue between events.</p><span class="when future">future</span></article>
+      </div>
+      <div class="note-strip reveal"><span class="tag">No hype</span> We don't promise income figures. RaverCloud gives you the structure and the opportunity — the audience and the work are yours.</div>
+    </div>
+  </section>
+
+  <!-- ============ 8 · FOUNDING PROGRAM ============ -->
+  <section class="section founding" id="founding" data-screen-label="Founding program">
+    <div class="wrap">
+      <div class="ticket reveal">
+        <div class="ticket-l">
+          <span class="badge"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Limited slots · Cohort 01</span>
+          <span class="eyebrow-index">08 / Founding DJ Residency Program</span>
+          <h2 class="display">Help shape the next generation of virtual performance.</h2>
+          <p>We're opening a limited number of early RaverCloud residency slots for DJs, collectives, and labels who want to build a premium show format from the ground up — with hands-on setup and direct feedback at every step.</p>
+          <a href="#" class="btn btn--primary btn--lg" style="align-self:flex-start">Apply for a Founding DJ Residency</a>
+        </div>
+        <div class="ticket-r">
+          <h4>Included in the program</h4>
+          <ul class="incl">
+            <li><span class="ck">✓</span>Branded DJ profile page</li>
+            <li><span class="ck">✓</span>First virtual event page</li>
+            <li><span class="ck">✓</span>Ticketing setup</li>
+            <li><span class="ck">✓</span>OBS setup guide</li>
+            <li><span class="ck">✓</span>10-minute tech rehearsal</li>
+            <li><span class="ck">✓</span>Audience video participation</li>
+            <li><span class="ck">✓</span>Replay page</li>
+            <li><span class="ck">✓</span>Basic promo kit</li>
+            <li><span class="ck">✓</span>Post-event feedback session</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9 · DEMO / PROOF ============ -->
+  <section class="section section--tight" id="demo" data-screen-label="Demo / proof">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom:42px">
+        <span class="kicker">09 / Inside the product</span>
+        <h2 class="display">See the room before you book it.</h2>
+        <p class="lede">Drop in real screens as they're ready — these slots persist exactly where you place them.</p>
+      </div>
+      <div class="gallery">
+        <div class="shot big reveal"><span class="slot-tag">Virtual club</span><image-slot id="shot-club" placeholder="Drop virtual club screenshot" fit="cover"></image-slot></div>
+        <div class="shot tall reveal" data-d="1"><span class="slot-tag">DJ feed + room</span><image-slot id="shot-feed" placeholder="Drop DJ feed composite" fit="cover"></image-slot></div>
+        <div class="shot wide reveal"><span class="slot-tag">Audience video wall</span><image-slot id="shot-wall" placeholder="Drop video wall mockup" fit="cover"></image-slot></div>
+        <div class="shot sq reveal" data-d="1"><span class="slot-tag">Event page</span><image-slot id="shot-event" placeholder="Drop event page mockup" fit="cover"></image-slot></div>
+        <div class="shot wide reveal"><span class="slot-tag">DJ profile page</span><image-slot id="shot-profile" placeholder="Drop DJ profile mockup" fit="cover"></image-slot></div>
+        <div class="shot sq reveal" data-d="1"><span class="slot-tag">Promo kit</span><image-slot id="shot-promo" placeholder="Drop promo kit mockup" fit="cover"></image-slot></div>
+      </div>
+      <div class="builton"><span>Built on the Luminara / XCaster live media stack</span><span class="rule"></span><span>v0 · founding cohort</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 10 · FAQ ============ -->
+  <section class="section" id="faq" data-screen-label="FAQ">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom:36px">
+        <span class="kicker">10 / Questions</span>
+        <h2 class="display">Before you apply.</h2>
+      </div>
+      <div class="faq reveal">
+        <details><summary><span class="q">Do I need VR?</span><span class="plus"></span></summary><p class="a">No. RaverCloud is a screen-based virtual club — your fans watch and join from a browser. There's no headset required for you or your audience.</p></details>
+        <details><summary><span class="q">Do I need OBS?</span><span class="plus"></span></summary><p class="a">Yes — for now, you'll stream into the virtual club using OBS. We give you a guided setup and a 10-minute tech rehearsal so it's straightforward even if it's your first time.</p></details>
+        <details><summary><span class="q">Can I perform from home?</span><span class="plus"></span></summary><p class="a">Absolutely. A home setup is the most common way founding DJs run their residency. You bring the decks and the camera; we provide the room.</p></details>
+        <details><summary><span class="q">Can I sell tickets?</span><span class="plus"></span></summary><p class="a">Yes. Each event page supports paid entry, tiers, and tips. Replay access can be sold or gated after the show ends.</p></details>
+        <details><summary><span class="q">Can fans appear in the virtual club?</span><span class="plus"></span></summary><p class="a">Yes — fans can opt in to the audience video wall and appear inside the room. It's always opt-in, never forced.</p></details>
+        <details><summary><span class="q">What happens after the live event?</span><span class="plus"></span></summary><p class="a">Your set becomes a replay you own. Gate it, sell it, clip it for promo, or release it free — every show builds your archive.</p></details>
+        <details><summary><span class="q">Is this fully self-serve?</span><span class="plus"></span></summary><p class="a">Not yet. The early version is a guided Founding DJ program — we set things up with you by hand so the first cohort's shows look and feel premium. Self-serve tooling comes later.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 11 · FINAL CTA ============ -->
+  <section class="final" data-screen-label="Final CTA">
+    <div class="final-lights" data-anim><span></span></div>
+    <div class="wrap">
+      <span class="kicker kicker--plain reveal">Founding DJ Residency · Cohort 01</span>
+      <h2 class="display reveal" data-d="1">Not another livestream link.<br><em>Your own virtual residency.</em></h2>
+      <div class="hero-actions reveal" data-d="2" style="justify-content:center">
+        <a href="#" class="btn btn--primary btn--lg">Apply for a Founding DJ Residency</a>
+        <a href="#demo" class="btn btn--ghost btn--lg"><span class="play"></span>Watch the Demo</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark"></span><b>RaverCloud</b><span class="sub">/ Residency</span></a>
+    <div class="foot-meta">
+      <span>Built on Luminara / XCaster</span>
+      <a href="#founding">Apply</a>
+      <a href="#faq">FAQ</a>
+      <span>© 2026 RaverCloud</span>
+    </div>
+  </div>
+</footer>
+
+<div id="tweaks-root"></div>
+
+<!-- React island: Tweaks panel only -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="js/tweaks-app.jsx"></script>
+
+<!-- Plain web components + page behavior -->
+<script src="image-slot.js"></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
