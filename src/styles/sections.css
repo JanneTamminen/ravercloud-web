@@ -274,6 +274,13 @@
 .fan-wall { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px;
   border: 1px solid var(--line-strong); border-radius: var(--radius); padding: 7px;
   background: var(--surface); box-shadow: 0 24px 60px rgba(0,0,0,.5); }
+.fan-wall--photo {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  padding: 0;
+  overflow: hidden;
+}
 .fan-wall .tile { aspect-ratio: 1; background: var(--surface-2); position: relative; overflow: hidden; }
 .fan-wall .tile::before { content: ""; position: absolute; inset: 0;
   background: radial-gradient(circle at 50% 38%, rgba(var(--accent-rgb),.4), transparent 60%);

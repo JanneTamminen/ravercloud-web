@@ -1,10 +1,10 @@
-import { JetBrains_Mono, Oswald, Space_Grotesk } from "next/font/google";
+import { JetBrains_Mono, Saira_Condensed, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const oswald = Oswald({
+const sairaCondensed = Saira_Condensed({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-oswald",
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-saira-condensed",
   display: "swap",
 });
 
@@ -30,8 +30,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="midnight"
-      className={`${oswald.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
+      data-theme="afterglow"
+      className={`${sairaCondensed.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
     >
       <body>{children}</body>
     </html>

@@ -94,7 +94,7 @@ ul { list-style: none; }
   --accent2-rgb: 255,178,77;
   --on-accent:   #1a0410;
 
-  --font-display: 'Saira Condensed', sans-serif;
+  --font-display: var(--font-saira-condensed), 'Saira Condensed', sans-serif;
   --display-weight: 800;
   --display-tracking: -0.005em;
   --display-leading: 0.9;

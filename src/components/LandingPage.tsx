@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Faq } from "@/components/Faq";
 import { MediaSlot } from "@/components/MediaSlot";
 import { Nav } from "@/components/Nav";
@@ -157,12 +158,51 @@ const INCLUDES = [
 ];
 
 const GALLERY = [
-  { className: "big", tag: "Virtual club", label: "Virtual club screenshot" },
-  { className: "tall", tag: "DJ feed + room", label: "DJ feed composite", delay: 1 },
-  { className: "wide", tag: "Audience video wall", label: "Video wall mockup" },
-  { className: "sq", tag: "Event page", label: "Event page mockup", delay: 1 },
-  { className: "wide", tag: "DJ profile page", label: "DJ profile mockup" },
-  { className: "sq", tag: "Promo kit", label: "Promo kit mockup", delay: 1 },
+  {
+    className: "big",
+    tag: "Virtual club",
+    label: "Virtual club screenshot",
+    src: "/images/shot-club.png",
+    alt: "RaverCloud virtual club stage with DJ Niki",
+  },
+  {
+    className: "tall",
+    tag: "DJ feed + room",
+    label: "DJ feed composite",
+    src: "/images/shot-feed.png",
+    alt: "XCaster DJ feed with DJ Aiko Noir in the virtual room",
+    delay: 1,
+  },
+  {
+    className: "wide",
+    tag: "Audience video wall",
+    label: "Video wall mockup",
+    src: "/images/shot-wall.png",
+    alt: "VIP audience video wall with fan cams in the virtual club",
+  },
+  {
+    className: "sq",
+    tag: "Event page",
+    label: "Event page mockup",
+    src: "/images/shot-event.png",
+    alt: "PsyTrance Sessions 001 branded event page with countdown and live chat",
+    delay: 1,
+  },
+  {
+    className: "wide",
+    tag: "DJ profile page",
+    label: "DJ profile mockup",
+    src: "/images/shot-profile.png",
+    alt: "DJ Aiko Noir brand and identity profile settings",
+  },
+  {
+    className: "sq",
+    tag: "Promo kit",
+    label: "Promo kit mockup",
+    src: "/images/shot-promo.png",
+    alt: "PsyTrance Sessions event promo with upcoming and past events",
+    delay: 1,
+  },
 ];
 
 const WALL_DELAYS = ["0s", ".4s", ".8s", "1.2s", "1.6s", "2s"];
@@ -216,7 +256,12 @@ export function LandingPage() {
                   <span className="dot" />
                   Live
                 </span>
-                <MediaSlot label="DJ feed / virtual club still" />
+                <MediaSlot
+                  label="DJ feed / virtual club still"
+                  src="/images/hero-stage.png"
+                  alt="DJ Aiko Noir performing in the RaverCloud virtual club"
+                  priority
+                />
                 <div className="stage-hud">
                   <div className="stage-eq" data-anim>
                     {[0, 0.15, 0.3, 0.1, 0.25, 0.05, 0.35, 0.2].map((delay) => (
@@ -298,7 +343,11 @@ export function LandingPage() {
                 </div>
                 <div className="fvis">
                   <span className="slot-tag">DJ profile</span>
-                  <MediaSlot label="DJ profile mockup" />
+                  <MediaSlot
+                    label="DJ profile mockup"
+                    src="/images/feat-profile.png"
+                    alt="DJ Aiko Noir profile page mockup"
+                  />
                 </div>
               </article>
               {FEATS.map((feat) => (
@@ -355,10 +404,14 @@ export function LandingPage() {
           <div className="wrap">
             <div className="fan-split">
               <div className="fan-visual reveal">
-                <div className="fan-wall" data-anim>
-                  {Array.from({ length: 16 }, (_, i) => (
-                    <div key={i} className={`tile${[1, 7, 10].includes(i) ? " self" : ""}`} />
-                  ))}
+                <div className="fan-wall fan-wall--photo">
+                  <Image
+                    src="/images/fan-wall.png"
+                    alt="DJ performing with audience video wall of fan cams behind"
+                    fill
+                    sizes="(max-width: 880px) 100vw, 45vw"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
               </div>
               <div>
@@ -459,7 +512,7 @@ export function LandingPage() {
               {GALLERY.map((shot) => (
                 <div key={shot.tag} className={`shot ${shot.className} reveal`} {...delayAttr(shot.delay)}>
                   <span className="slot-tag">{shot.tag}</span>
-                  <MediaSlot label={shot.label} />
+                  <MediaSlot label={shot.label} src={shot.src} alt={shot.alt} />
                 </div>
               ))}
             </div>
